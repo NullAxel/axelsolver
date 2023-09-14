@@ -1,7 +1,7 @@
 from setuptools import setup
 
 __project__ = "axelsolver"
-__version__ = "0.0.2"
+__version__ = "0.0.3"
 __description__ = "AxelSolver are a series of Solvers (classes) that run specific tasks, for example: VoiceSolver is for Text-to-Speech and NuclearSolver is for a KillSwitch website (just in case AI takes over.)"
 __packages__ = ["axelsolver"]
 __author__ = "NullDev (Naiel V)"
