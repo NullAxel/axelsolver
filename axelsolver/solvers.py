@@ -33,7 +33,8 @@ def say_local(text: str):
 
 
 def cast_url(name, url):
-    chromecasts, browser = pychromecast.get_listed_chromecasts(friendly_names=[name])
+    chromecasts, browser = pychromecast.get_listed_chromecasts(friendly_names=[
+                                                               name])
     if not chromecasts:
         print(f'No chromecast with name "{name}" discovered')
         raise Exception(f'No chromecast with name "{name}" discovered')
@@ -50,6 +51,3 @@ def cast_url(name, url):
     quick_play.quick_play(cast, app_name, app_data)
 
     sleep(0.25)
-
-def file_transfer(filename, path):
-    raise NotImplementedError
